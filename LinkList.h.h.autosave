@@ -1,0 +1,12 @@
+#ifndef LINKLIST_H
+#define LINKLIST_H
+
+#include "Object.h"
+
+namespace zxcLib {
+template <temp>
+class 
+
+} 
+
+#endif // LINKLIST_H
