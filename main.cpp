@@ -13,7 +13,7 @@
 using namespace std;
 using namespace zxcLib;
 
-class test1 : public Object
+class test : public Object
 {
 protected:
     int cnt;
@@ -22,17 +22,17 @@ public:
 //    {
 //        cnt = 0;
 //    }
-    test1(int i = 0)
+    test(int i = 0)
     {
         cnt = i;
     }
 
-    bool operator ==(const test1& obj)
+    bool operator ==(const test& obj)
     {
         return (cnt == obj.cnt);
     }
 
-    bool operator !=(const test1& obj)
+    bool operator !=(const test& obj)
     {
         return (cnt != obj.cnt);
     }
