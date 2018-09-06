@@ -211,8 +211,9 @@ public:
             remove_node->previous->next = remove_node->next;
             remove_node->next->previous = remove_node->previous;
 
-            delete remove_node;
             m_length --;
+            delete remove_node;
+
         }
 
         return ret;
@@ -271,7 +272,7 @@ public:
 
     }
 
-    void clear()
+    void clean()
     {
         //int cnt = 0;
         Node* cur_node = m_header.next;
@@ -279,11 +280,11 @@ public:
 
         while(NULL != cur_node)
         {
+            m_length --;
             delete_node = cur_node;
             cur_node = cur_node->next;
             destroy(delete_node) ;
         }
-        m_length = 0;
     }
 
     bool move(int start = 0,int step = 1)
@@ -351,7 +352,7 @@ public:
 
     ~LinkList()
     {
-       clear();
+       clean();
     }
 };
 }
