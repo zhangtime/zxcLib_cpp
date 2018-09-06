@@ -208,6 +208,10 @@ public:
 //                cnt ++;
 //            }
 
+            if(m_cur_node ==  remove_node)
+            {
+                m_cur_node = m_cur_node->next;
+            }
             remove_node->previous->next = remove_node->next;
             remove_node->next->previous = remove_node->previous;
 

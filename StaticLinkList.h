@@ -111,7 +111,7 @@ public:
 
     ~StaticLinkList()
     {
-
+       this->clean();
     }
 
 };
