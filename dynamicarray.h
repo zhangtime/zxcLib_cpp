@@ -64,7 +64,7 @@ protected:
     }
 
 public:
-    DynamicArray(int length)    //申请空间
+    DynamicArray(int length = 0 )    //申请空间
     {
 
         array_init(new T[length],length);
